@@ -14,3 +14,8 @@ def count_vowel_letters(s: str) -> int:
 			count += 1
 
 	return count
+
+my_string = input("Введите строку: ")
+print(
+	f"'{my_string}' содержит {count_vowel_letters(my_string)} гласных."
+)
