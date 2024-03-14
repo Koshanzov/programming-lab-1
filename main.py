@@ -1,5 +1,14 @@
+import string
+
 russian_vowels = "аоуыэяёюие"
 english_vowels = "aeiouy"
+
+def is_palindrome(userString):
+    userString = userString.lower()
+    userString = userString.replace(" ", "")
+    for c in string.punctuation:
+        userString = userString.replace(c, "")
+    return userString == userString[::-1]
 
 def count_vowel_letters(s: str) -> int:
 	"""
@@ -19,3 +28,6 @@ my_string = input("Введите строку: ")
 print(
 	f"'{my_string}' содержит {count_vowel_letters(my_string)} гласных."
 )
+
+userString = input()
+print(is_palindrome(userString))
