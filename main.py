@@ -1,5 +1,5 @@
-russian_vowels = "аоуыэяёюие"
-english_vowels = "aeiouy"
+russian_vowels = "а"
+english_vowels = "a"
 
 def count_vowel_letters(s: str) -> int:
 	"""
